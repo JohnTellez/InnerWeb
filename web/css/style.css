@@ -817,6 +817,7 @@ footer p a:hover{
 }
 /*-- //to-top --*/
 /*-- responsive --*/
+/* -- Responsive a 1440px -- */
 @media(max-width:1440px){
 	.contact-form-left {
 		padding: 4em 0em 4em 9em;
@@ -825,6 +826,7 @@ footer p a:hover{
 		padding: 4em 9em 4em 4em;
 	}
 }
+/* -- Responsive a 1280px -- */
 @media(max-width:1280px){
 	.contact-form-left {
 		padding: 4em 0em 4em 6em;
@@ -833,10 +835,9 @@ footer p a:hover{
 		padding: 4em 6em 4em 4em;
 	}
 }
+/* -- Responsive a 1080px -- */
 @media(max-width:1080px){
-	.w3ls-text {
-		width: 35%;
-	}
+	
 	.team-caption {
 		height: 306px;
 	}
@@ -846,30 +847,61 @@ footer p a:hover{
 	.address-info {
 		width: 60%;
 	}
+
 }
+/* -- Responsive y cambio de menu a 991px -- */
 @media(max-width:991px){
 	.agileits-logo h1 a img {
-		width: 8%;
+		width: 25%;
+        margin-left: -45%;
+        padding-top: 5px;
 	}
 	.navbar-header {
 		float: none;
 		text-align: center;
 		margin: 0 0 2em 0;
+        padding-top: 10px;
 	}
 	.navbar-nav {
 		float: none;
 		margin: 0;
 		text-align: center;
+               
 	}
 	.navbar-nav > li {
 		float: none;
 		display: inline-block;
+        align-items:center;
+        font-size: 0.9em;
 	}
-	.w3layouts-banner-info {
+    
+    .navbar-toggle {
+		margin-right: 0;
+        top: 10px;
+	}
+    
+    .navbar-default .navbar-toggle {
+		border-color: #fff;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background: #FB5E03;
+	}
+    .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
+    
+   	.w3layouts-banner-info {
 		padding: 6em 0 2em 0;
 	}
 	.w3ls-text {
-		width: 50%;
+		width: 70%;
 	}
 	.introduction-info p {
 		width: 90%;
@@ -901,6 +933,7 @@ footer p a:hover{
 		width: 6%;
 	}
 }
+/* -- Responsive a 736px -- */
 @media(max-width:736px){
 	.navbar-toggle {
 		margin-right: 0;
@@ -912,7 +945,7 @@ footer p a:hover{
 		background-color: #fff;
 	}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-		background: none;
+		background: #FB5E03;
 	}
 	.navbar-collapse {
 		position: absolute;
@@ -928,10 +961,10 @@ footer p a:hover{
 		margin: 0;
 	}
 	.w3ls-text h2 {
-		font-size: 4em;
+		font-size: 3em;
 	}
 	.w3ls-text {
-		width: 46%;
+		width: 100%;
 	}
 	.w3layouts-banner-info {
 		padding: 3em 0 2em 0;
@@ -952,8 +985,40 @@ footer p a:hover{
 	div#design {
 		min-height: 940px;
 	}
+    .agileits-logo h1 a img {
+		width: 40%;
+        margin-left: -45%;
+	}
+     .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
 }
+/* -- Responsive a 667px -- */
 @media(max-width:667px){
+    
+    .agileits-logo h1 a img {
+		width: 45%;
+        margin-left: -45%;
+	}
+    
+    .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
+    .w3ls-text {
+		border: solid 10px #FFFFFF;
+        width: 100%;
+	}
+	.w3ls-text h2 {
+		font-size: 2em;
+	}
 	.team-caption {
 		height: 419px;
 	}
@@ -961,9 +1026,26 @@ footer p a:hover{
 		margin: 5.5em 0 0 0;
 	}
 }
+/* -- Responsive a 600px -- */
 @media(max-width:600px){
-	.w3ls-text {
-		width: 55%;
+     .agileits-logo h1 a img {
+		width: 50%;
+        margin-left: -40%;
+	}
+    
+      .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
+    .w3ls-text {
+		border: solid 10px #FFFFFF;
+        width: 100%;
+	}
+	.w3ls-text h2 {
+		font-size: 2em;
 	}
 	.nav-tabs > li {
 		margin: 0 0px;
@@ -978,7 +1060,38 @@ footer p a:hover{
 		width: 15%;
 	}
 }
+
+/* -- Responsive a 568px --*/
 @media(max-width:568px){
+    .agileits-logo h1 a img {
+		width: 50%;
+        margin-left: -40%;
+	}
+    
+      .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
+    
+    
+    .w3ls-text {
+		border: solid 10px #FFFFFF;
+        width: 100%;
+	}
+	.w3ls-text h2 {
+		font-size: 2em;
+	}
+	.about-grid-left span {
+		font-size: 1.7em;
+	}
+	.nav-tabs > li > a {
+		margin-right: 0px;
+		padding: .5em .5em;
+	}
+    
 	.team-caption {
 		height: 344px;
 	}
@@ -992,12 +1105,15 @@ footer p a:hover{
 		width: 47%;
 	}
 }
+
+/* -- Responsive a 480px -- */
 @media(max-width:480px){
 	.w3ls-text {
 		border: solid 10px #FFFFFF;
+        width: 100%;
 	}
 	.w3ls-text h2 {
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.about-grid-left span {
 		font-size: 1.7em;
@@ -1030,7 +1146,14 @@ footer p a:hover{
 		letter-spacing: 1px;
 	}
 	.agileits-logo h1 a img {
-		width: 10%;
+		width: 60%;
+	}
+     .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
 	}
 	.wthree-news-left{
 		width:20%;
@@ -1046,7 +1169,7 @@ footer p a:hover{
 	}
 }
 
-
+/* -- Responsive a 414px -- */
 @media(max-width:414px){
 	.agileits-logo h1 a {
 		font-size: .8em;
@@ -1057,6 +1180,15 @@ footer p a:hover{
         padding-right: 20px;
         margin-left: -5px;
 	}
+    
+    .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
+       
 	.w3ls-text {
 		width: 100%;
         font-size: 12px;
@@ -1108,7 +1240,7 @@ footer p a:hover{
 		margin: 2em 0 0 0;
 	}
 }
-@media(max-width:384px){
+/*@media(max-width:384px){
 	.team-caption h4 {
 		font-size: 1em;
 	}
@@ -1127,8 +1259,22 @@ footer p a:hover{
 	.header {
 		margin: 0em 0 0 0;
 	}
-}
-@media(max-width:375px){
+}*/
+/*@media(max-width:375px){
+    
+    .agileits-logo h1 a img {
+		width: 90%;
+        margin-left: -25px;
+        padding-top: 10px;
+	}
+    
+    .navbar-toggle {
+		margin-right: 0;
+    }
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+	}
 	.nav-tabs > li {
 		margin: 2px 0px;
 	}
@@ -1144,16 +1290,34 @@ footer p a:hover{
 	.wthree-news-grid{
 		margin:0 0 1em 0;
 	}
-}
+}*/
+
+/* -- Responsive a 320px -- */
 @media(max-width:320px){
 	.agileits-logo h1 a {
 		font-size: .6em;
 	}
 	.agileits-logo h1 a img {
-		width: 15%;
+		width: 80%;
+        margin-left: -25px;
+        padding-top: 10px;
 	}
+    
+    .navbar-toggle {
+		margin-right: 0;
+        right: 5px;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #8c8c8c;
+        background: orange;
+        
+	}
+    .navbar-default {
+        width: 114%;
+    }
+        
 	.w3ls-text h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.w3ls-text {
 		border: solid 5px #FFFFFF;
@@ -1190,9 +1354,42 @@ footer p a:hover{
 	.address-icon {
 		width: 16%;
 	}
+    
+    .googlemaps>iframe {
+        width: 430px;
+        height: 300px;
+        
+    }
 	.navbar-collapse {
 		z-index: 99;
 	}
+    .contact-form-right>h5 {
+		width: 100px;
+        text-align: justify;
+        font-size: 0.7em;
+        font-weight: bold;
+    }
+        
+    .btnenviar {
+        width: 99px;
+        text-align: center;
+        
+    }
+    .contact-form-left h5 {
+        text-align: center;
+        width: 190%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .address-grids {
+        text-align: center;
+        margin: 10% 0;
+        margin-left: 28%;
+        
+        
+    }
+        
 }
 /*-- //responsive --*/
 
@@ -1257,6 +1454,8 @@ footer p a:hover{
 }
 
 .googlemaps {
+    width: 100%;
+    height: 500px;
     background: transparent;
     padding: 20px;
     margin: 0;
@@ -1264,6 +1463,8 @@ footer p a:hover{
 }
 
 .googlemaps>iframe {
+    width: 900px;
+    height: 450px;
     margin-left: -200px;
     border-radius: 10px;
 }
