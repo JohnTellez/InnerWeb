@@ -661,6 +661,7 @@ div#design {
 .contact-form-right{
     padding: 4em 13em 4em 4em;
     background: #e4e4e4;
+    
 }
 .contact-form-grid{
 	margin:4em 0 0 0;
@@ -1092,7 +1093,7 @@ footer p a:hover{
 	}
 	.contact-form-right {
 		padding: 2em 2em 2em 2em;
-	}
+    }
 	.modal-header h4 {
 		font-size: 1.2em;
 	}
@@ -1246,4 +1247,33 @@ footer p a:hover{
     formlogin {
         width: 95%
     }
+}
+
+.googlemaps {
+    background: transparent;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-form-right {
+		padding: 2em 2em 2em 2em;
+        width: 100%;
+        display:block;
+        text-align: center;
+        padding-left: 50px
+                  
+}
+
+.visitas {
+    position: relative;
+    display: block;
+    width: 5px;
+    height: 50px;
+    margin: 20px auto;
+    right: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+    
 }
