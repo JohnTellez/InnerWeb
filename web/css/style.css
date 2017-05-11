@@ -1686,4 +1686,33 @@ fieldset#body {
     *padding:7px 2px 8px 2px; /* IE7 Fix */
 }
 
+.video{
+    width: 100%;
+    margin-top: 1%;
+}
+.video > .about-grid-left{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    padding-right: inherit;
+}
+.video > .about-grid-right{
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+.txtNormal{
+    text-transform: none !important;
+}
 
+.modal-video > .modal-content{
+    height: 500px;
+}
+
+.bs-example{
+    margin: 20px;
+}
+.modal-content iframe{
+    margin: 0 auto;
+    display: block;
+}
