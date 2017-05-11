@@ -1689,6 +1689,7 @@ fieldset#body {
 .video{
     width: 100%;
     margin-top: 1%;
+    cursor: pointer;
 }
 .video > .about-grid-left{
     margin-top: 2%;
