@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    $(window).load(function(){
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    });
+    
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
     var url = $("#frmVideo").attr('src');
