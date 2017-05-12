@@ -36,9 +36,11 @@ body{
 /*-- header --*/
 .header {
     margin: -16px;
-    width: 100%;
+    width: 101%;
     height: 80px;
     background: #fff;
+    position: fixed;
+    z-index: 99;
     
 }
 .agileits-logo h1{
@@ -60,7 +62,7 @@ body{
     float: left;
     position: absolute;
     padding: 5px 6px;
-    top: -11px;
+    top: -9px;
     
 }
 /*-- social-icons --*/
@@ -112,17 +114,21 @@ body{
 	margin:0 0 .5em 0;
 }
 /*-- //social-icons --*/
+
 .navbar-default {
     background: #fff;
     border: none;
     top: 15px;
+    border-radius: 5px;
 }
 .navbar {
     margin-bottom: 0;
+    border-radius: 5px;
 }
 .navbar-collapse {
     padding: 0;
     box-shadow: none;
+    border-radius: 5px;
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -131,39 +137,43 @@ body{
     float: right;
     margin: 0;
     text-align: center;
-    
+    border-radius: 5px;
 }
 .navbar-default .navbar-nav > li > a {
     color: #000;
     border: solid 4px rgba(255, 255, 255, 0);
+    border-radius: 5px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
     border: solid 4px #ffffff;
     background: #FB5E03;
     font-weight: bold;
+    border-radius: 5px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #fff;
     font-weight: bold;
+    border-radius: 5px;
 }
 .navbar-nav > li > a {
 	font-size: 1em;
     padding: .5em 1em;
     margin-right: 5px;
+    border-radius: 5px;
     
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
     border: solid 4px #ffffff;
     background: #FB5E03;
-    
+    border-radius: 5px;
 }
 /*-- header --*/
 
 /*-- w3layouts-banner-info --*/
 .w3layouts-banner-info {
-    padding: 8em 0 2em 0;
+    padding: 11em 0 2em 0;
  
 }
 .w3ls-text{
@@ -348,7 +358,7 @@ body{
     margin-right: 3px;
     font-size: 1em;
     color: #212121;
-    border: solid 2px #212121;
+    border: solid 2px rgba(0,0,0,0.3);
     border-radius: 0px;
 	-webkit-border-radius: 0px;
 	-ms-border-radius: 0px;
@@ -402,10 +412,10 @@ body{
 	-ms-transition: 0.5s all;
 }
 .w3_tab_img_left:hover .agile-gallery-info{
-    border-bottom: solid 2px #8e3cfe;
+    border-bottom: solid 2px #FB5E03;
 }
 .w3_tab_img_left:hover .agile-gallery-info p{
-    color: #8e3cfe;
+    color: #FB5E03;
 }
 /*-- //gallery --*/
 /*-- team --*/
@@ -679,7 +689,7 @@ div#design {
 	text-decoration:none;
 }
 .address-info p a:hover{
-	color:#8e3cfe;
+	color: #FB5E03;
 }
 .address-grid:nth-child(2){
 	margin:1em 0;
@@ -1507,9 +1517,10 @@ footer p a:hover{
     color: #000;
     position: absolute;
     right: 10px;
-    top: -10px;
+    top: -12px;
     z-index:30;
     cursor:pointer;
+    
 }
 
 /* Login Button Text */
@@ -1520,6 +1531,7 @@ footer p a:hover{
     padding:7px 25px 3px 19px;
     display:block;
     height: 38px;
+  
     
 }
 
@@ -1684,8 +1696,16 @@ fieldset#body {
     margin: 0 auto;
     display: block;
 }
-
-div#preloader { 
+#preloader>h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 13em;
+    margin-left: 1em;
+    font-size: 40px;
+    
+}
+div#preloader {
     position: fixed; 
     left: 0; top: 0; 
     z-index: 999; 
@@ -1694,3 +1714,58 @@ div#preloader {
     overflow: visible; 
     background: #333 url('../images/loading.gif') no-repeat center center; 
 }
+
+/* -- Animacion Casos de Exito -- */
+
+/*.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; } */
+

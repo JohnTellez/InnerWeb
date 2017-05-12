@@ -4,25 +4,22 @@
 <title>InnerConsulting</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta name="keywords" content="Rock Music Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- bootstrap-css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstrap-css -->
-<!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<!--// css -->
-<!-- gallery -->
 <link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
-<!-- //gallery -->
-<!-- font-awesome icons -->
+<!-- Favicon -->
+<link rel="shortcut icon" href="/images/favicon%20(1).ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon%20(1).ico" type="image/x-icon">
+<!-- Favicon -->
+<!-- font-awesome iconos -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<!-- font -->
+<!-- font-awesome iconos -->
+<!-- fuente -->
 <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!-- //font -->
+<!-- fuente -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/functions.js"></script>
@@ -49,7 +46,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <![endif]-->
 </head>
 <body>
-	<div id="preloader"></div>
+	<div id="preloader">
+	    <h3>Cargando...</h3>
+	</div>
 	<!-- banner -->
 	<div class="banner jarallax">
 		<div class="agileinfo-dot">
@@ -76,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li class="active"><a href="index.html">Inicio</a></li>
 									<li><a href="#about" class="scroll">Nosotros</a></li>
 									<li><a href="#events" class="scroll">Portafolio</a></li>
-									<li><a href="#team" class="scroll">Casos de Exito</a></li>
+									<li><a href="#team" class="scroll">Casos de Éxito</a></li>
 									<li><a href="#news" class="scroll">Aliados</a></li>
 									<li><a href="#mail" class="scroll">Contactar</a></li>
 									<!--<li><a href="#" data-toggle="modal" data-target="#myModal2" class="scroll">Login</a></li>-->
@@ -155,7 +154,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        <div class="modal-dialog modal-lg">
 	            <div class="modal-content">
 	                <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
 	                    <h4 class="modal-title txtNormal">InnerConsulting</h4>
 	                </div>
 	                <div class="modal-body">
@@ -238,11 +237,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 					<ul id="myTab" class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">All</a></li>
-						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Category 1</a></li>
-						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Category 2</a></li>
-						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Category 3</a></li>
-						<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Category 4</a></li>
+						<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">Todos</a></li>
+						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Categoria 1</a></li>
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Categoria 2</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Categoria 3</a></li>
+						<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Categoria 4</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
@@ -571,6 +570,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //team -->
+	<!-- Modal para los teams -->
+	<div id="openModal" class="modalDialog">
+	    <div>
+	       <a href="#close" title="Close" class="close">X</a>
+		    <h2>Modal Box</h2>
+		    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+	 
+	    </div>
+	
+    </div>
+	
+	
 	<!-- news -->
 	<div class="news" id="news">
 		<div class="container">
@@ -686,35 +698,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //modal -->
 	
-	
-	
-	<!-- modal login -->
-	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Formulario de Login</h4>
-						
-					</div> 
-					<div class="modal-body-login">
-					    <form action="validar.php" method="post" class="formlogin">
-					        <input type="text" class="inputlogin" placeholder="✍ Usuario" name="usuario">
-					        <input type="password" class="inputlogin"
-					        placeholder="&#128272 Contraseña" name="clave">
-					        <input type="Submit" value="Ingresar" class="ingresar">
-					    </form>
-					        
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal login -->
-	
-	
-	
-	
 	<!-- contact -->
 	<div class="contact" id="mail">
 		<div class="container">
@@ -814,7 +797,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		
 	</div>
-	<!-- //contact -->
+	<!-- contacto -->
 	<!-- footer -->
 	<footer>
 		<div class="container">
@@ -837,7 +820,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/login.js"></script>
 	<script src="js/jarallax.js"></script>
 	<script src="js/SmoothScroll.min.js"></script>
+	<script src="js/modal.js"></script>
 	<script type="text/javascript">
+    
 		/* init Jarallax */
 		$('.jarallax').jarallax({
 			speed: 0.5,
