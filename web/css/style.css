@@ -36,11 +36,9 @@ body{
 /*-- header --*/
 .header {
     margin: -16px;
-    width: 101%;
+    width: 100%;
     height: 80px;
     background: #fff;
-    position: fixed;
-    z-index: 99;
     
 }
 .agileits-logo h1{
@@ -62,7 +60,7 @@ body{
     float: left;
     position: absolute;
     padding: 5px 6px;
-    top: -9px;
+    top: -11px;
     
 }
 /*-- social-icons --*/
@@ -114,22 +112,17 @@ body{
 	margin:0 0 .5em 0;
 }
 /*-- //social-icons --*/
-
 .navbar-default {
     background: #fff;
     border: none;
     top: 15px;
-    border-radius: 5px;
-    
 }
 .navbar {
     margin-bottom: 0;
-    border-radius: 5px;
 }
 .navbar-collapse {
     padding: 0;
     box-shadow: none;
-    border-radius: 5px;
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -138,46 +131,39 @@ body{
     float: right;
     margin: 0;
     text-align: center;
-    border-radius: 5px;
     
 }
 .navbar-default .navbar-nav > li > a {
     color: #000;
     border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 110px;
 }
-
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
     border: solid 4px #ffffff;
     background: #FB5E03;
     font-weight: bold;
-    border-radius: 5px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #fff;
     font-weight: bold;
-    border-radius: 5px;
 }
 .navbar-nav > li > a {
 	font-size: 1em;
     padding: .5em 1em;
     margin-right: 5px;
-    border-radius: 5px;
     
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
     border: solid 4px #ffffff;
     background: #FB5E03;
-    border-radius: 5px;
+    
 }
 /*-- header --*/
 
 /*-- w3layouts-banner-info --*/
 .w3layouts-banner-info {
-    padding: 11em 0 2em 0;
+    padding: 8em 0 2em 0;
  
 }
 .w3ls-text{
@@ -362,7 +348,7 @@ body{
     margin-right: 3px;
     font-size: 1em;
     color: #212121;
-    border: solid 2px rgba(0,0,0,0.3);
+    border: solid 2px #212121;
     border-radius: 0px;
 	-webkit-border-radius: 0px;
 	-ms-border-radius: 0px;
@@ -416,10 +402,10 @@ body{
 	-ms-transition: 0.5s all;
 }
 .w3_tab_img_left:hover .agile-gallery-info{
-    border-bottom: solid 2px #FB5E03;
+    border-bottom: solid 2px #8e3cfe;
 }
 .w3_tab_img_left:hover .agile-gallery-info p{
-    color: #FB5E03;
+    color: #8e3cfe;
 }
 /*-- //gallery --*/
 /*-- team --*/
@@ -693,7 +679,7 @@ div#design {
 	text-decoration:none;
 }
 .address-info p a:hover{
-	color: #FB5E03;
+	color:#8e3cfe;
 }
 .address-grid:nth-child(2){
 	margin:1em 0;
@@ -840,9 +826,9 @@ footer p a:hover{
 	display: none;
 	text-decoration: none;
 	position: fixed;
-	bottom: 80px;
+	bottom: 20px;
 	right: 2%;
-    overflow: hidden;
+	overflow: hidden;
 	z-index: 999; 
 	width: 40px;
 	height: 40px;
@@ -873,20 +859,6 @@ footer p a:hover{
 }
 /* -- Responsive a 1280px -- */
 @media(max-width:1280px){
-    
-      .agileits-logo h1 a img {
-		width: 15%;
-        padding-top: 10px;
-        left: 10px;
-    }
-    
-       .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 122%;
-        border-radius: none;
-        right: -1px;
-    }
 	.contact-form-left {
 		padding: 4em 0em 4em 6em;
 	}
@@ -895,71 +867,26 @@ footer p a:hover{
 	}
 }
 /* -- Responsive a 1080px -- */
-@media(max-width:1080px) {
-    
-    .agileits-logo h1 a img {
-		width: 18%;
-        padding-top: 5px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 108%;
-        border-radius: none;
-        right: -1px;
-    }
-    
-     .modal > #loginForm {  /* <------------------ */
-        position: absolute;
-        left: 250px;
-        padding: auto;
-        width: 500px;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-    }
+@media(max-width:1080px){
 	
-    .contact-form-left > h5 {
-        text-align: center;
-        left: 50px;
-    }
 	.team-caption {
 		height: 306px;
 	}
 	.team-caption h4 {
 		margin: 3.5em 0 0 0;
 	}
-	
+	.address-info {
+		width: 60%;
+	}
+
 }
 /* -- Responsive y cambio de menu a 991px -- */
-@media(max-width:991px) {
-    
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    
+@media(max-width:991px){
 	.agileits-logo h1 a img {
-		width: 20%;
-        margin-left: -50%;
+		width: 25%;
+        margin-left: -45%;
         padding-top: 5px;
 	}
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 137%;
-        border-radius: none;
-        right: -19px;
-        
-        
-    }
 	.navbar-header {
 		float: none;
 		text-align: center;
@@ -967,11 +894,9 @@ footer p a:hover{
         padding-top: 10px;
 	}
 	.navbar-nav {
+		float: none;
+		margin: 0;
 		text-align: center;
-        position: absolute;
-        padding: -5px;
-        
-        
                
 	}
 	.navbar-nav > li {
@@ -979,9 +904,6 @@ footer p a:hover{
 		display: inline-block;
         align-items:center;
         font-size: 0.9em;
-        bottom: 70px;
-        left: 350px;
-        top: -80px;
 	}
     
     .navbar-toggle {
@@ -1005,21 +927,6 @@ footer p a:hover{
 		border-color: #8c8c8c;
         background: orange;
 	}
-      .modal > #loginForm {  /* <------------------ */
-        position: absolute;
-        left: 250px;
-        padding: auto;
-        width: 500px;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-       
-       
-        
-    }
     
    	.w3layouts-banner-info {
 		padding: 6em 0 2em 0;
@@ -1059,83 +966,6 @@ footer p a:hover{
 }
 /* -- Responsive a 736px -- */
 @media(max-width:736px){
-    
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 102%;
-        border-radius: none;
-        right: auto;
-        
-        
-    }
-	.navbar-default .navbar-toggle {
-		border-color: #8c8c8c;
-        background: orange;
-        margin-right: 10px;
-        margin-top: -16px;
-	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-    right: 50px;
-    text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 50px;
-    text-align: center;
-    margin-left: auto;
-    width: 80%;
-    }
-    
-    .navbar-collapse {
-		z-index: 99;
-        left: 20px;
-        top: 51px;
-        width: 90%;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: center;
-        position: relative;
-        right: 30px;
-        width: 100%;
-        
-    } 
-    
-     .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
-    }
 	.navbar-toggle {
 		margin-right: 0;
 	}
@@ -1187,7 +1017,7 @@ footer p a:hover{
 		min-height: 940px;
 	}
     .agileits-logo h1 a img {
-		width: 26%;
+		width: 40%;
         margin-left: -45%;
 	}
      .navbar-toggle {
@@ -1201,84 +1031,9 @@ footer p a:hover{
 /* -- Responsive a 667px -- */
 @media(max-width:667px){
     
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 105%;
-        border-radius: none;
-        
-        
-    }
-	.navbar-default .navbar-toggle {
-		border-color: #8c8c8c;
-        background: orange;
-        margin-right: 50px;
-        margin-top: -16px;
-	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-        text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 35px;
-    text-align: center;
-    margin-left: auto;
-    width: 80%;
-    }
-    
-    .navbar-collapse {
-		z-index: 99;
-        left: 30px;
-        top: 51px;
-        width: 90%;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: right;
-        position: relative;
-        right: 20px;
-        width: 100%;
-        
-    } 
-    
-     .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
-    }
-    
     .agileits-logo h1 a img {
-		width: 27%;
-        margin-left: -40%;
+		width: 45%;
+        margin-left: -45%;
 	}
     
     .navbar-toggle {
@@ -1304,84 +1059,8 @@ footer p a:hover{
 }
 /* -- Responsive a 600px -- */
 @media(max-width:600px){
-    
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 105%;
-        border-radius: none;
-        
-        
-    }
-	.navbar-default .navbar-toggle {
-		border-color: #8c8c8c;
-        background: orange;
-        margin-right: 50px;
-        margin-top: -16px;
-	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-    right: 20px;
-    text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 20px;
-    text-align: center;
-    margin-left: auto;
-    width: 80%;
-    }
-    
-    .navbar-collapse {
-		z-index: 99;
-        left: 20px;
-        top: 51px;
-        width: 90%;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: center;
-        position: relative;
-        right: 20%;
-        width: 120%;
-        
-    } 
-    
-     .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
-    }
      .agileits-logo h1 a img {
-		width: 30%;
+		width: 50%;
         margin-left: -40%;
 	}
     
@@ -1415,84 +1094,8 @@ footer p a:hover{
 
 /* -- Responsive a 568px --*/
 @media(max-width:568px){
-    
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 105%;
-        border-radius: none;
-        
-        
-    }
-	.navbar-default .navbar-toggle {
-		border-color: #8c8c8c;
-        background: orange;
-        margin-right: 30px;
-        margin-top: -17px;
-	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-    right: 20px;
-    text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 20px;
-    text-align: center;
-    margin-left: auto;
-    width: 80%;
-    }
-    
-    .navbar-collapse {
-		z-index: 99;
-        left: 20px;
-        top: 51px;
-        width: 90%;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: right;
-        position: relative;
-        right: 8px;
-        width: 100%;
-        
-    } 
-    
-     .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
-    }
     .agileits-logo h1 a img {
-		width: 35%;
+		width: 50%;
         margin-left: -40%;
 	}
     
@@ -1536,82 +1139,6 @@ footer p a:hover{
 
 /* -- Responsive a 480px -- */
 @media(max-width:480px){
-    
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 105%;
-        border-radius: none;
-        
-        
-    }
-	.navbar-default .navbar-toggle {
-		border-color: #8c8c8c;
-        background: orange;
-        margin-right: 10px;
-        margin-top: -16px;
-	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-    right: 20px;
-    text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 20px;
-    text-align: center;
-    margin-left: auto;
-    width: 80%;
-    }
-    
-    .navbar-collapse {
-		z-index: 99;
-        left: 20px;
-        top: 51px;
-        width: 90%;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: right;
-        position: relative;
-        right: 8px;
-        width: 100%;
-        
-    } 
-    
-     .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
-    }
 	.w3ls-text {
 		border: solid 10px #FFFFFF;
         width: 100%;
@@ -1650,7 +1177,7 @@ footer p a:hover{
 		letter-spacing: 1px;
 	}
 	.agileits-logo h1 a img {
-		width: 45%;
+		width: 60%;
         padding-left: 20px;
         padding-right: 20px;
         margin-left: -5px;
@@ -1679,96 +1206,26 @@ footer p a:hover{
 
 /* -- Responsive a 414px -- */
 @media(max-width:414px){
-    
     .w3l-heading>h3 {
         font-size: 1.5em
     }
 	.agileits-logo h1 a {
 		font-size: .8em;
-        	}
+	}
 	.agileits-logo h1 a img {
-
-        width: 60%;
+		width: 60%;
         padding-left: 20px;
         padding-right: 20px;
-        margin-left: -15px;
+        margin-left: -5px;
 	}
     
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .navbar-default, .header {
-        top: 10px;
-        height: 10px;
-        width: 105%;
-        border-radius: none;
-        
-        
-    }
+    .navbar-toggle {
+		margin-right: 0;
+	}
 	.navbar-default .navbar-toggle {
 		border-color: #8c8c8c;
         background: orange;
-        margin-right: 10px;
-        margin-top: -16px;
 	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-    right: 20px;
-    text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 20px;
-    text-align: center;
-    margin-left: auto;
-    width: 80%;
-    }
-    
-    .navbar-collapse {
-		z-index: 99;
-        left: 20px;
-        top: 51px;
-        width: 90%;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: right;
-        position: relative;
-        right: 8px;
-        width: 100%;
-        
-    } 
-    
-     .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
-    }
        
 	.w3ls-text {
 		width: 100%;
@@ -1823,105 +1280,27 @@ footer p a:hover{
 }
 
 /* -- Responsive a 320px -- */
-@media(max-width:320px) {
-    
+@media(max-width:320px){
 	.agileits-logo h1 a {
 		font-size: .6em;
 	}
-    #frmVideo {
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-    }
-    .modal-header > h4 {
-        font-size: 15px;
-    }
 	.agileits-logo h1 a img {
-		width: 60%;
+		width: 80%;
         margin-left: -25px;
-        padding-top: 15px;
+        padding-top: 10px;
 	}
     
-    
-    .w3layouts-banner-info .agiledot-info {
-        margin-top: 30px;
-        height: 247px;
-        
-    }
-    
-    .loginButton span {
-        display: none;
-    }
     .navbar-toggle {
 		margin-right: 0;
         right: 5px;
-        
-        
 	}
 	.navbar-default .navbar-toggle {
 		border-color: #8c8c8c;
         background: orange;
-        top: 15px;
         
 	}
-    
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    border: solid 4px #ffffff;
-    background: #FB5E03;
-    border-radius: 5px;
-    margin-left: auto;
-    right: 20px;
-    text-align: center;
-    width: 80%;
-     }
-    
-    .navbar-default .navbar-nav > li > a {
-    color: #000;
-    border: solid 4px rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    right: 20px;
-    text-align: center;
-    margin-left: auto;
-        width: 80%;
-    }
-    
-	.navbar-collapse {
-		z-index: 99;
-        left: 17px;
-        top: 51px;
-    
-	}
-    
-    .navbar-default .navbar-nav > li {  /* <-------- */
-        text-align: right;
-        position: relative;
-        right: 8px;
-        width: 100%;
-        
-    } 
     .navbar-default {
-        width: 106%;
-        height: 20px;
-        top: 10px;
-    }
-    
-    .modal > #loginForm {  /* <------------------ */
-        position:relative;
-        right: -10px;
-        left: auto;
-        top: auto;
-        padding: auto;
-        width: auto;
-        height: auto;
-        border:1px solid transparent;
-        border-radius:3px 0 3px 3px;
-        -moz-border-radius:3px 0 3px 3px;
-        margin-top:10px;
-        background:#FB5E03;
-        padding: 20px;   
-       
-        
+        width: 114%;
     }
         
 	.w3ls-text h2 {
@@ -1929,7 +1308,6 @@ footer p a:hover{
 	}
 	.w3ls-text {
 		border: solid 5px #FFFFFF;
-        margin-top: 20px;
 	}
 	.w3-arrow {
 		margin: 3em 0 0 0;
@@ -1964,12 +1342,14 @@ footer p a:hover{
 		width: 16%;
 	}
     
-    .googlemaps > iframe {
+    .googlemaps>iframe {
         width: 430px;
         height: 300px;
         
-     }
-    
+    }
+	.navbar-collapse {
+		z-index: 99;
+	}
     .contact-form-right>h5 {
 		width: 100px;
         text-align: justify;
@@ -1994,12 +1374,8 @@ footer p a:hover{
         text-align: center;
         margin: 10% 0;
         margin-left: 28%;
-    }
-    .header {
-        position:absolute;
-        width: 107%;
-        height: 5px;
-        top: 1px;
+        
+        
     }
         
 }
@@ -2007,10 +1383,7 @@ footer p a:hover{
 
 /*-- Login --*/
 
-.modal-backdrop {
-    z-index: 10;
-}
-/*.formlogin {
+.formlogin {
     margin: auto;
     width: 90%;
     max-width: 500px;
@@ -2067,7 +1440,7 @@ footer p a:hover{
         width: 95%
     }
 }
-*/
+
 .googlemaps {
     width: 100%;
     height: 500px;
@@ -2080,7 +1453,7 @@ footer p a:hover{
 .googlemaps>iframe {
     width: 959px;
     height: 450px;
-    margin-left: -189px;
+    margin-left: -200px;
     border-radius: 10px;
 }
 
@@ -2113,36 +1486,114 @@ footer p a:hover{
     right: 50%;
 }
 
+
+/* -- Menu desplegable LOGIN -- */
+
+#loginContainer {
+    
+    position:relative;
+    float:right;
+    left: 890px;
+    margin-top: 16px;
+    font-size:12px;
+}
+
+/* Login Button */
+#loginButton { 
+    display:relative;
+    float:right;
+    background:#fff;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    z-index:30;
+    cursor:pointer;
+}
+
+/* Login Button Text */
+#loginButton span {
+    color:#000; 
+    font-size:16px; 
+    text-align: center;
+    padding:7px 25px 3px 19px;
+    display:block;
+    height: 38px;
+    
+}
+
+#loginButton:hover span {
+    background: #FB5E03;
+    color: #fff;
+    font-weight: bold;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+   
+}
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    top:34px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active {
+    border-radius:3px 3px 0 0;
+     -moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+	-ms-animation: bounce 2s infinite;
+	animation: bounce 3.5s infinite;
+   
+}
+
+#loginButton.active span {
+    background-position:53px -76px;
+     background: #FB5E03;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em {
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+}
+
 /* Login Form */
 #loginForm {
-    position:relative;
-    right: 0 auto;
-    left: 39%;
-    top: 95px;
-    
-    width: 390px;
-    height: 350px;
+    width:248px; 
     border:1px solid transparent;
     border-radius:3px 0 3px 3px;
     -moz-border-radius:3px 0 3px 3px;
-    margin-top:10px;
-    background:#FB5E03;
-    padding: 20px;
+    margin-top:-1px;
+    background:#d2e0ea;
+    padding:6px;
 }
 
 #loginForm fieldset {
     margin:0 0 12px 0;
-    
     display:block;
     border:0;
-    padding: 20px;
+    padding:0;
 }
 
 fieldset#body {
     background:#fff;
     border-radius:3px;
     -moz-border-radius:3px;
-    padding: 25px 25px;
+    padding:10px 13px;
     margin:0;
 }
 
@@ -2176,7 +1627,7 @@ fieldset#body {
     -moz-border-radius:3px;
     color: orangered;
     font-weight:normal;
-    padding:4px 4px;
+    padding:8px 8px;
     box-shadow:inset 0px 1px 3px #bbb;
     -webkit-box-shadow:inset 0px 1px 3px #bbb;
     -moz-box-shadow:inset 0px 1px 3px #bbb;
@@ -2185,11 +1636,11 @@ fieldset#body {
 
 /* Sign In Button */
 #loginForm #login {
-    width: 90px;
-    float: left;
+    width:auto;
+    float:left;
     background: #FB5E03;
     color:#fff;
-    padding:10px 10px 8px 10px;
+    padding:7px 10px 8px 10px;
     text-shadow:0px -1px #fff;
     border:1px solid #fff;
     box-shadow:none;
@@ -2199,12 +1650,6 @@ fieldset#body {
     cursor:pointer;
     border-radius: 4px;
     *padding:7px 2px 8px 2px; /* IE7 Fix */
-    border-radius:3px 3px 0 0;
-     -moz-animation: bounce 5s infinite;
-	-webkit-animation: bounce 5s infinite;
-	-o-animation: bounce 5s infinite;
-	-ms-animation: bounce 5s infinite;
-	animation: bounce 5s infinite;
     
 }
 
@@ -2225,7 +1670,7 @@ fieldset#body {
     padding-top: 2%;
 }
 .txtNormal{
-    text-transform: capitalize !important;
+    text-transform: uppercase !important;
 }
 
 .modal-video > .modal-content{
@@ -2239,16 +1684,8 @@ fieldset#body {
     margin: 0 auto;
     display: block;
 }
-#preloader>h3 {
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 13em;
-    margin-left: 1em;
-    font-size: 40px;
-    
-}
-div#preloader {
+
+div#preloader { 
     position: fixed; 
     left: 0; top: 0; 
     z-index: 999; 
@@ -2257,4 +1694,3 @@ div#preloader {
     overflow: visible; 
     background: #333 url('../images/loading.gif') no-repeat center center; 
 }
-
