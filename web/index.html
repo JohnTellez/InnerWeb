@@ -77,9 +77,22 @@
 									<li><a href="#news" class="scroll">Aliados</a></li>
 									<li><a href="#mail" class="scroll">Contactar</a></li>
 									<li><a href="#" data-toggle="modal" data-target="#myModal2" class="scroll">Login</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#live" class="blink">Transmisiones en vivo</a></li>
+									
 								</ul>
 							</nav>
                             </div>
+                            
+                            <!-- Live modal -->
+                            
+                            <div class="modal about-modal fade" id="live" tabindex="-1" role="dialog">
+                                  
+                                <iframe id="ls_embed_1495053271" src="https://livestream.com/accounts/23751709/events/7371924/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=1&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
+                           
+                          </div>
+                            
+                            
 				        <!-- Menu de Login -->
 				
 							<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
@@ -129,7 +142,7 @@
 			</div>
 			<div class="col-md-6 about-grid video">
 				<div class="col-xs-3 about-grid-left">
-					<span class="glyphicon glyphicon-play-circle effect-1" aria-hidden="true" data-toggle="modal" href="#myModal"></span>
+					<span class="glyphicon glyphicon-play-circle effect-1" aria-hidden="true" data-toggle="modal" href="#myModal3"></span>
 				</div>
 				<div class="col-xs-9 about-grid-right">
 					<h4 class="txtNormal">Mira nuestro video</h4>
@@ -146,7 +159,7 @@
 
 	<div class="bs-example">
     <!-- Modal HTML -->
-	    <div id="myModal" class="modal fade modal-video">
+	    <div id="myModal3" class="modal fade modal-video">
 	        <div class="modal-dialog modal-lg">
 	            <div class="modal-content">
 	                <div class="modal-header">
@@ -154,7 +167,7 @@
 	                    <h4 class="modal-title txtNormal">InnerConsulting</h4>
 	                </div>
 	                <div class="modal-body">
-	                    <iframe id="frmVideo" width="850" height="500" src="https://www.youtube.com/embed/bqzFz6ijq9E?autoplay=0" frameborder="0" allowfullscreen ></iframe>
+	                    <iframe id="frmVideo" width="850" height="500" src="https://www.youtube.com/embed/bqzFz6ijq9E?&rel=0&amp;showinfo=0&autoplay=0" frameborder="0" allowfullscreen ></iframe>
 	                </div>
 	            </div>
 	        </div>
@@ -582,7 +595,7 @@
 								<h4>03 <span>Jan 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal2"> Lorem ipsum dolor sit amet</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"> Lorem ipsum dolor sit amet</a>
 								<p>Morbi felis sapien, pulvinar quis pharetra rutrum, auctor sit amet ipsum. Aliquam dictum massa ut porttitor ultricies. Duis non enim eros. Aliquam sed porttitor lectus.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -592,7 +605,7 @@
 								<h4>08 <span>Sept 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal2"> Cras vestibulum dapibus <span class="blinking"><img src="images/new.png" alt="" /></span></a>
+								<a href="#" data-toggle="modal" data-target="#myModal"> Cras vestibulum dapibus <span class="blinking"><img src="images/new.png" alt="" /></span></a>
 								<p>Curabitur egestas porttitor erat quis cursus. Aliquam nec sapien urna. Curabitur tincidunt dolor sed metus maximus dapibus. Integer ligula enim, condimentum id commodo eget</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -602,7 +615,7 @@
 								<h4>17 <span>July 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal2"> Fusce id molestie mauris</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"> Fusce id molestie mauris</a>
 								<p>Cras blandit felis augue, nec faucibus lectus hendrerit vitae. Vestibulum rutrum, magna id pellentesque fermentum, est risus scelerisque leo, at consequat nunc sem non tortor.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -612,7 +625,7 @@
 								<h4>15 <span>Aug 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal2"> Aliquam vulputate arcu enim <span class="blinking"><img src="images/new.png" alt="" /></span></a>
+								<a href="#" data-toggle="modal" data-target="#myModal"> Aliquam vulputate arcu enim <span class="blinking"><img src="images/new.png" alt="" /></span></a>
 								<p>Aliquam sed porttitor lectus. Donec sagittis magna non eros convallis, dapibus iaculis nunc tincidunt. Pellentesque quam nisi, cursus non vestibulum ac, vehicula eu tortor.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -622,7 +635,7 @@
 								<h4>24 <span>Sept 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal2"> Donec ac turpis aliquet</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"> Donec ac turpis aliquet</a>
 								<p>Curabitur facilisis fermentum gravida. Nunc suscipit nec enim ut suscipit. Mauris mollis lectus at mi vehicula rutrum vel non dolor. Nulla ut purus arcu. Pellentesque sed finibus</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -632,7 +645,7 @@
 								<h4>24 <span>Oct 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal2"> Morbi nec justo ut ex rhoncus luctus</a>
+								<a href="#" data-toggle="modal" data-target="#myModal"> Morbi nec justo ut ex rhoncus luctus</a>
 								<p>Nullam accumsan imperdiet elementum. Quisque volutpat sapien sed ipsum condimentum elementum. Suspendisse potenti. Maecenas fermentum justo sit amet interdum viverra.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -662,7 +675,7 @@
 	</div>
 	<!-- //news -->
 	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header"> 
@@ -827,11 +840,21 @@
 	</script>
 <!-- //here ends scrolling icon -->
 
-<!-- begin olark code -->
-<script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
-/* custom configuration goes here (www.olark.com/documentation) */
+<!-- begin olark code--> 
+<script type="text/javascript" async>
+;(function(o,l,a,r,k,y){if(o.olark)return;
+r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
+y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
+y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)};
+y.extend=function(i,j){y("extend",i,j)};
+y.identify=function(i){y("identify",k.i=i)};
+y.configure=function(i,j){y("configure",i,j);k.c[i]=j};
+k=y._={s:[],t:[+new Date],c:{},l:a};
+})(window,document,"static.olark.com/jsclient/loader.js");
+/* Add configuration calls below this comment */
 olark.identify('9731-959-10-3533');</script>
 <!-- end olark code -->
+
 
 
 
