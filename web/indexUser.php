@@ -62,7 +62,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<div class="agileits-logo">
-								<h1><a href="index.html"><img src="images/logo1.png" alt="" /></a></h1>
+								<h1><a href="index.php"><img src="images/logo1.png" alt="" /></a></h1>
 							</div>
 						</div>
 
@@ -70,30 +70,23 @@
 						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 							<nav>
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="index.html">Inicio</a></li>
+									<li class="active"><a href="index.php">Inicio</a></li>
 									<li><a href="#about" class="scroll">Nosotros</a></li>
 									<li><a href="#events" class="scroll">Portafolio</a></li>
 									<li><a href="#team" class="scroll">Casos de Éxito</a></li>
 									<li><a href="#news" class="scroll">Aliados</a></li>
-									<li><a href="#mail" class="scroll">Contactar</a></li>
-									<li><a href="#" id="login" class="scroll" data-toggle="modal" data-target="#loginModal">Login</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#live" class="blink">Transmisiones en vivo</a></li>
-									
+									<li><a href="#mail" class="scroll">Revisar Mensajes</a></li>
 								</ul>
 							</nav>
                             </div>
-                            
-                            <!-- Live modal -->
-                            
-                            <div class="modal about-modal fade" id="live" tabindex="-1" role="dialog">
-                                  
-                                <iframe id="ls_embed_1495053271" src="https://livestream.com/accounts/23751709/events/7371924/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=1&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
-                           
-                          </div>
-                            
-                            
 				        <!-- Menu de Login -->
+				        <div class="cn-logout">
+				        	<b>Bienvenido </b><?php echo $_SESSION['user'] ?><br>
+				        	<form id="form" name="form" action="index.php" method="post">
+				        		<input type="hidden" name="logout" value="1">
+								<a href="#" class="scroll" title="Cerrar sesión" onclick="subLogout(document.form)">Logout</a>
+							</form>
+				        </div>
 				
 							<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
                                   
@@ -142,7 +135,7 @@
 			</div>
 			<div class="col-md-6 about-grid video">
 				<div class="col-xs-3 about-grid-left">
-					<span class="glyphicon glyphicon-play-circle effect-1" aria-hidden="true" data-toggle="modal" href="#myModal3"></span>
+					<span class="glyphicon glyphicon-play-circle effect-1" aria-hidden="true" data-toggle="modal" href="#myModal"></span>
 				</div>
 				<div class="col-xs-9 about-grid-right">
 					<h4 class="txtNormal">Mira nuestro video</h4>
@@ -159,7 +152,7 @@
 
 	<div class="bs-example">
     <!-- Modal HTML -->
-	    <div id="myModal3" class="modal fade modal-video">
+	    <div id="myModal" class="modal fade modal-video">
 	        <div class="modal-dialog modal-lg">
 	            <div class="modal-content">
 	                <div class="modal-header">
@@ -167,7 +160,7 @@
 	                    <h4 class="modal-title txtNormal">InnerConsulting</h4>
 	                </div>
 	                <div class="modal-body">
-	                    <iframe id="frmVideo" width="850" height="500" src="https://www.youtube.com/embed/bqzFz6ijq9E?&rel=0&amp;showinfo=0&autoplay=0" frameborder="0" allowfullscreen ></iframe>
+	                    <iframe id="frmVideo" width="850" height="500" src="https://www.youtube.com/embed/bqzFz6ijq9E?autoplay=0" frameborder="0" allowfullscreen ></iframe>
 	                </div>
 	            </div>
 	        </div>
@@ -595,7 +588,7 @@
 								<h4>03 <span>Jan 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Lorem ipsum dolor sit amet</a>
+								<a href="#" data-toggle="modal" data-target="#myModal2"> Lorem ipsum dolor sit amet</a>
 								<p>Morbi felis sapien, pulvinar quis pharetra rutrum, auctor sit amet ipsum. Aliquam dictum massa ut porttitor ultricies. Duis non enim eros. Aliquam sed porttitor lectus.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -605,7 +598,7 @@
 								<h4>08 <span>Sept 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Cras vestibulum dapibus <span class="blinking"><img src="images/new.png" alt="" /></span></a>
+								<a href="#" data-toggle="modal" data-target="#myModal2"> Cras vestibulum dapibus <span class="blinking"><img src="images/new.png" alt="" /></span></a>
 								<p>Curabitur egestas porttitor erat quis cursus. Aliquam nec sapien urna. Curabitur tincidunt dolor sed metus maximus dapibus. Integer ligula enim, condimentum id commodo eget</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -615,7 +608,7 @@
 								<h4>17 <span>July 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Fusce id molestie mauris</a>
+								<a href="#" data-toggle="modal" data-target="#myModal2"> Fusce id molestie mauris</a>
 								<p>Cras blandit felis augue, nec faucibus lectus hendrerit vitae. Vestibulum rutrum, magna id pellentesque fermentum, est risus scelerisque leo, at consequat nunc sem non tortor.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -625,7 +618,7 @@
 								<h4>15 <span>Aug 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Aliquam vulputate arcu enim <span class="blinking"><img src="images/new.png" alt="" /></span></a>
+								<a href="#" data-toggle="modal" data-target="#myModal2"> Aliquam vulputate arcu enim <span class="blinking"><img src="images/new.png" alt="" /></span></a>
 								<p>Aliquam sed porttitor lectus. Donec sagittis magna non eros convallis, dapibus iaculis nunc tincidunt. Pellentesque quam nisi, cursus non vestibulum ac, vehicula eu tortor.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -635,7 +628,7 @@
 								<h4>24 <span>Sept 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Donec ac turpis aliquet</a>
+								<a href="#" data-toggle="modal" data-target="#myModal2"> Donec ac turpis aliquet</a>
 								<p>Curabitur facilisis fermentum gravida. Nunc suscipit nec enim ut suscipit. Mauris mollis lectus at mi vehicula rutrum vel non dolor. Nulla ut purus arcu. Pellentesque sed finibus</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -645,7 +638,7 @@
 								<h4>24 <span>Oct 2017</span></h4>
 							</div>
 							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Morbi nec justo ut ex rhoncus luctus</a>
+								<a href="#" data-toggle="modal" data-target="#myModal2"> Morbi nec justo ut ex rhoncus luctus</a>
 								<p>Nullam accumsan imperdiet elementum. Quisque volutpat sapien sed ipsum condimentum elementum. Suspendisse potenti. Maecenas fermentum justo sit amet interdum viverra.</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -675,7 +668,7 @@
 	</div>
 	<!-- //news -->
 	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header"> 
@@ -698,101 +691,28 @@
 	<div class="contact" id="mail">
 		<div class="container">
 			<div class="w3l-heading about-heading">
-				<h3>Contactenos</h3>
+				<h3>Mensajes</h3>
 				<div class="w3ls-border about-border"> </div>
-			</div>
-			<div class="introduction-info contact-info">
-				<p>Te acompañamos desde el modelamiento de la necesidad hasta el soporte postventa permanente a nuestros clientes.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus iaculis lacus in pharetra. Morbi tincidunt nisi et bibendum varius. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vulputate arcu consequat enim vulputate posuere. Aenean malesuada quam vitae mi ullamcorper, vel lobortis risus rutrum.</p>
 			</div>
 		</div>
 	</div>
 	<div class="contact-form">
-		<div class="col-md-4 contact-form-left">
-			<h5>Nuestras Oficinas</h5>
-			<div class="address-grids">
-				<div class="address-grid">
-					<div class="address-icon">
-						<i class="fa fa-map-marker" aria-hidden="true"></i>
-					</div>	
-					<div class="address-info">
-						<p>Av Calle 119a N° 70G - 91<br>
-							Barrio Antiguo Niza,<br>
-							Bogota - Colombia.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="address-grid">
-					<div class="address-icon">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-					</div>	
-					<div class="address-info">
-						<p>+57 14757555<br>
-						+57 14758811</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="address-grid">
-					<div class="address-icon">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</div>	
-					<div class="address-info">
-						<p><a href="mailto:example@email.com">contacto@innerconsulting.com</a></p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
+		<div class="contentTable">
+			<table class="table .table-striped">
+				<thead>
+					<tr>
+						<th>TEMA</th>
+						<th>MENSAJE</th>
+						<th>NOMBRE CONTACTO</th>
+						<th>TELÉFONO</th>
+						<th>EMAIL</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php getMessages(); ?>
+				</tbody>
+			</table>
 		</div>
-		<!-- Google Maps -->
-		<div class="googlemaps">
-		
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4728.7265755185645!2d-74.07746170182354!3d4.705758764900381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ad55e6c72ff%3A0x7540ae486cb64e6a!2sInner+Consulting!5e0!3m2!1ses!2ses!4v1494354233592" frameborder="0" style="border:0"></iframe>
-		
-		</div>
-		<!-- Google Maps -->
-		
-		<div class="col-md-8 contact-form-right">
-			<h5>Formulario de contacto</h5>
-			<div class="contact-form-grid">
-				<form action="index.php" method="post">
-					<div class="fields-grid">
-						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="name" required="">
-							<label>Nombre completo</label>
-							<span></span>
-						</div>
-						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="phone" required=""> 
-							<label>Teléfono</label>
-							<span></span>
-						</div>
-						<div class="styled-input">
-							<input type="email" name="email" required=""> 
-							<label>Email</label>
-							<span></span>
-						</div> 
-						<div class="styled-input">
-							<input type="text" name="subject" required="">
-							<label>Tema</label>
-							<span></span>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="styled-input textarea-grid">
-						<textarea name="message" required=""></textarea>
-						<label>Mensaje</label>
-						<span></span>
-					</div>	
-					<input type="text" name="saveContact" value="1"> 
-					<input class="btnenviar" type="submit" value="Enviar">
-				</form>
-			</div>
-		</div>
-		<div class="clearfix1"> 
-		
-		
-		</div>
-		
 	</div>
 	<!-- contacto -->
 	<!-- footer -->
@@ -841,21 +761,11 @@
 	</script>
 <!-- //here ends scrolling icon -->
 
-<!-- begin olark code--> 
-<script type="text/javascript" async>
-;(function(o,l,a,r,k,y){if(o.olark)return;
-r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
-y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
-y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)};
-y.extend=function(i,j){y("extend",i,j)};
-y.identify=function(i){y("identify",k.i=i)};
-y.configure=function(i,j){y("configure",i,j);k.c[i]=j};
-k=y._={s:[],t:[+new Date],c:{},l:a};
-})(window,document,"static.olark.com/jsclient/loader.js");
-/* Add configuration calls below this comment */
+<!-- begin olark code -->
+<script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
+/* custom configuration goes here (www.olark.com/documentation) */
 olark.identify('9731-959-10-3533');</script>
 <!-- end olark code -->
-
 
 
 

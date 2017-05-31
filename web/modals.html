@@ -1,0 +1,82 @@
+<!-- Modal para el registro de usuarios -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">FORMULARIO DE REGISTRO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modalRegister">
+        <form>
+          <div class="form-group">
+            <label class="form-control-label">Nombre*</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Apellido*</label>
+            <input type="text" class="form-control" id="lName">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Email*</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Nombre de usuario*</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Contraseña*</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer" id="footerRg">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="createUser">Crear</button>
+      </div>
+      <div class="alert alert-success" style="display: none;" id="successRg">
+        <strong>Se ha guardado con exito!</strong> Ya puedes iniciar sesión.
+      </div>
+      <div class="modal-footer" id="closeRg">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin modal registtro -->
+
+<!-- Modal para el Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">INICIAR SESIÓN</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modalRegister">
+        <form action="index.php" method="post">
+          <div class="form-group">
+            <label class="form-control-label">Nombre de usuario*</label>
+            <input type="text" class="form-control" name="username" required>
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Contraseña*</label>
+            <input type="password" class="form-control" name="password" required>
+          </div>
+          <input type="hidden" name="start" value="1">
+          <input type="submit" class="btn btn-primary" value="Ingresar">
+          <input type="button" id="register" class="btn btn-info right" data-toggle="modal" data-target="#registerModal" value="Registrarse">
+        </form>
+      </div>
+      <div class="modal-footer" id="footerRg">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Fin modal Login -->
